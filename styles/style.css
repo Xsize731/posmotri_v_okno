@@ -72,13 +72,13 @@ video {
 
 .result__video-container {
   position: relative;
-  margin: 0 0 16px;
   inline-size: 711px;
+  margin: 0 0 11px;
 }
 
 .search-form {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
 }
 
@@ -97,12 +97,14 @@ video {
 
 .search-form__fieldset-title {
   font-weight: 400;
+  font-size: 18px;
 }
 
 .search-form__label {
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
 }
 
 .search-form__label:hover {
@@ -115,14 +117,12 @@ video {
   outline-offset: 1px;
 }
 
-.search-form__label-text {}
-
 .search-form__textfield {
   border-top: 1px solid #FFF;
   border-right: none;
   border-bottom: 1px solid #FFF;
   border-left: none;
-  padding: 10px 0;
+  padding: 2px 0;
   color: #FFF;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
@@ -155,22 +155,20 @@ video {
   gap: 15px;
 }
 
-.search-form__checkbox {}
-
 .search-form__pseudo-checkbox {
-  position: relative;
   display: block;
   border: 1px solid #FFF;
-  cursor: pointer;
   inline-size: 19px;
   block-size: 19px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
-  position: absolute;
-  inset: 2px;
+  display: block;
   background-color: #FFF;
+  inline-size: 15px;
+  block-size: 15px;
+  margin: 1px 0 0 1px;
 }
 
 .button {
@@ -227,7 +225,7 @@ video {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 34px;
   overflow-y: scroll;
   block-size: 298px;
   scrollbar-width: none;
@@ -238,10 +236,6 @@ video {
 .content__list::-webkit-scrollbar {
   display: none;
 }
-
-.cards-list-item-template {}
-
-.content__list-item {}
 
 .content__card-link {
   display: block;
@@ -274,10 +268,8 @@ video {
   justify-content: space-between;
 }
 
-.content__video-card-description-container {}
-
 .content__video-card-title {
-  padding: 2px 2px 10px;
+  padding: 2px 2px 5px;
   color: #FFF;
   font-family: Oswald;
   font-weight: 700;
@@ -297,5 +289,3 @@ video {
 .content__video-card-thumbnail {
   inline-size: 194px;
 }
-
-.more-button {}
